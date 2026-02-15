@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddCoordinatesDialogBase</class>
+ <widget class="QDialog" name="AddCoordinatesDialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>AddCoordinates</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>-177</y>
+           <width>769</width>
+           <height>814</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="6" column="1">
+           <widget class="QGroupBox" name="grpCRS">
+            <property name="title">
+             <string>Coordinate Reference System</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <item row="1" column="0">
+              <widget class="QComboBox" name="cmbCRSType">
+               <item>
+                <property name="text">
+                 <string>Projected CRS (X,Y)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Geographic (Degrees)</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="lblCRSType_2">
+               <property name="text">
+                <string>CRS Type</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QGroupBox" name="grpCoordinates">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Coordinates</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QGroupBox" name="grpProjected">
+               <property name="title">
+                <string>Projected CRS</string>
+               </property>
+               <layout class="QVBoxLayout" name="verticalLayout_2">
+                <item>
+                 <widget class="QLabel" name="labelX">
+                  <property name="text">
+                   <string>X (Easting)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="txtX"/>
+                </item>
+                <item>
+                 <widget class="QLabel" name="labelY_3">
+                  <property name="text">
+                   <string>Y (Northing)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="txtY"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QGroupBox" name="grpGeographic">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="title">
+                <string>Geographic CRS</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="1">
+                 <widget class="QLabel" name="label_19">
+                  <property name="text">
+                   <string>Degrees*</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_20">
+                  <property name="text">
+                   <string>Min (opt)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_21">
+                  <property name="text">
+                   <string>Sec (opt)</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_17">
+                  <property name="text">
+                   <string>Latitude</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QLineEdit" name="txtLatDeg"/>
+                </item>
+                <item row="1" column="2">
+                 <widget class="QLineEdit" name="txtLatMin"/>
+                </item>
+                <item row="1" column="3">
+                 <widget class="QLineEdit" name="txtLatSec"/>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_18">
+                  <property name="text">
+                   <string>Longitude</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QLineEdit" name="txtLonDeg"/>
+                </item>
+                <item row="2" column="2">
+                 <widget class="QLineEdit" name="txtLonMin"/>
+                </item>
+                <item row="2" column="3">
+                 <widget class="QLineEdit" name="txtLonSec"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>ID Attribute (mandatory)</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="txtID"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnAddCoordinate">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Add Coordinate</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnMap">
+               <property name="text">
+                <string>Map Preview</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btnclear">
+               <property name="text">
+                <string>Clear</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="8" column="1">
+           <widget class="QGroupBox" name="grpOutput">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="title">
+             <string>Output</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_23">
+               <property name="text">
+                <string>Choose Output Format</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLineEdit" name="txtFolder"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QComboBox" name="cmbFormat">
+               <item>
+                <property name="text">
+                 <string>CSV</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Shapefile</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="txtFileName"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>Layer name</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="label_24">
+               <property name="text">
+                <string>Path to save file</string>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QToolButton" name="btnBrowse">
+               <property name="text">
+                <string>...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QPushButton" name="btnSave">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>Save</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

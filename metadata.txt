@@ -1,0 +1,22 @@
+[general]
+name=Add Coordinates
+qgisMinimumVersion=3.22
+description=Add projected or geographic coordinates to the map using unique IDs. Supports EPSG:32376 (Projected) and EPSG:4326 (Geographic). Preview points and export to CSV or Shapefile.
+version=1.0.0
+author=Wongani Msukwa
+email=wakuzilwa2005@gmail.com
+
+about=Adds points to the map using either projected or geographic coordinates, ensures unique IDs, allows preview in memory, and export to CSV or Shapefile. The plugin handles memory cleanly and simplifies coordinate input.
+
+tracker=https://github.com/Wongie1505/add_coordinates/
+repository=https://github.com/Wongie1505/add_coordinates
+
+# Recommended items
+hasProcessingProvider=no
+tags=python, add coordinates, vector, export, CSV, Shapefile
+homepage=https://github.com/yourusername/add_coordinates
+category=Vector
+icon=icon.png
+experimental=False
+deprecated=False
+server=False
